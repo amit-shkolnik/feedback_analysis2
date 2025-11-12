@@ -11,7 +11,16 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger:AGENT",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/agent.py",
+            "console": "integratedTerminal"
         }
 
+
+ 
     ]
 }

@@ -56,3 +56,19 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
+
+## הסבר פשוט ובעברית
+1. איך להריץ? הרץ את הקובץ 
+run_agent.py 
+אשר נמצא בתיקית 
+scripts.
+הקובץ קורא את הדאטה מתיקית דאטה.
+
+2. איך זה עובד?
+התוכנה קוראת את הדאטה ומחלקת אותו לצאנקים קטנים כדי שיוכל להיכנס לקונטקסט של 
+המודל.
+שים לב!!! שלב זה יכול לקחת מספר דקות, סליחה אבל לא 
+עשיתי אופטימיזציה לזה.
+
+
+לאחר מכן נפתח חלון בו ניתן לשאול שאלות
