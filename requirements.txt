@@ -1,0 +1,8 @@
+import pandas
+import requests
+from transformers import pipeline
+
+# Required packages for the project
+pandas
+requests
+transformers
