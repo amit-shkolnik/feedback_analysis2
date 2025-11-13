@@ -8,12 +8,13 @@ from env_data import HF_API_TOKEN
 data_file = "data/feedback.csv"
 hf_token = HF_API_TOKEN
 
-NUM_OF_FEEDBACK_TO_READ=250  # Set to 0 to read all feedback
+NUM_OF_FEEDBACK_TO_READ=500  # Set to 0 to read all feedback
+token_chunk_size=60000
 
 model= "openai/gpt-oss-120b"
 #model="zai-org/GLM-4.6:cerebras"
 
-token_chunk_size=15000
+
 
 prompt_prolog="""You are an expert data analyst. Given the user feedback data, 
 provide insights and summaries as requested.
