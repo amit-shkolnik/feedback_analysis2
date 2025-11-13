@@ -52,7 +52,10 @@ def split_json_to_token_chunks(file_path: str) -> List[str]:
         # with open(file_path, 'r', encoding='utf-8') as f:
         #     raw_json_string = f.read()
         data_df=pd.read_csv(file_path)
-        raw_json_string = data_df[:500].to_json(orient='records', force_ascii=False)
+        print(f"File read successfully. Number of records: {len(data_df)}")
+        raw_json_string = data_df.to_json(orient='records', force_ascii=False)
+        if config.NUM_OF_FEEDBACK_TO_READ>0:
+            raw_json_string = data_df[:config.NUM_OF_FEEDBACK_TO_READ].to_json(orient='records', force_ascii=False)
 
     except Exception as e:
         print(f"Error reading file: {e}")

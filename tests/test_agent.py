@@ -1,6 +1,13 @@
 import unittest
-import pandas as pd
-from src.agent import FeedbackAgent
+import os
+import io
+import sys
+
+sys.path.append(os.path.abspath("src"))
+
+from agent import Agent
+
+
 
 class TestFeedbackAgent(unittest.TestCase):
 
